@@ -1,0 +1,17 @@
+{
+  "name": "dank-express",
+  "version": "1.0.0",
+  "description": "DANK MEME search engine API",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "andreGarvin",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cheerio": "^0.22.0",
+    "express": "^4.15.2",
+    "request": "^2.81.0"
+  }
+}
