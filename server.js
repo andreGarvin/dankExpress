@@ -85,12 +85,14 @@ function search_and_scrape( url, arg, callback ) {
 
 app.get('/', ( req, resp ) => {
     
+    console.log('GET memes');
     search_and_scrape(`https://www.google.com/search?q=memes&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiW7orfqpvTAhWDz4MKHQm3D3cQ_AUIBigB&biw=555&bih=618`, 'memes', (err, data) => {
         if (err) {
             console.log( err );
             return;
         }
         
+        console.log('sent memes');
         resp.json( data );
     });
     
